@@ -1,0 +1,64 @@
+
+<!--     
+    <form method="post" action="" (ngSubmit)="getStrLength();">
+    national id=<input  #number type="text" name="nat" id="number">
+    <input type="submit" name="submit">
+    </form> -->
+
+
+
+    <body>
+        <div *ngIf="spin"> 
+          <!-- <div> -->
+         <div style="text-align: center;font-size: 32pt;padding-top: 39%;">
+           COVID-19
+         </div>
+         <div style="font-size: 24pt;text-align: center;color: #505050;">Tracer</div>
+         <ion-row>
+          <ion-col style="padding-left: 30px;font-size: 12pt;color: #838383;"> 
+            Phone number  
+          </ion-col>
+         </ion-row>
+         <!-- <form [formGroup]="todo" (ngSubmit)="logForm()"> -->
+         <ion-row>
+          <ion-col *ngIf="reedit" style="padding-left: 24px;">
+            <input  style="border: none;height: 34pt;width: 47px;border-bottom-left-radius: 6pt;border-top-left-radius: 6pt;padding-left: 4px;"value="+91">
+            <input #number type="number" style="border-bottom-right-radius: 6pt;border-top-right-radius: 6pt;border: none;height: 34pt;cursor: pointer;width: 80%;" name="phone_number"  [(ngModel)]="id" (keyup)="enable($event) " onKeyPress="if(this.value.length==10) return false;">
+            
+          </ion-col>
+          <ion-col *ngIf="!reedit">
+            <div>Phone_number</div>
+          </ion-col>
+         </ion-row>
+         <!-- <div  style="text-align: center;padding-top: 20px;">
+         <input *ngIf="!show" class="disabled_submit"  type="button" value="SUBMIT" >
+          </div> -->
+         <div  style="text-align: center;padding-top: 20px;" (click)="phone_number(id);navigate()" > 
+            <input  id="show" class="disabled_submit"   type="button" value="SUBMIT" >
+         </div>
+          <!-- </form> -->
+          <p style="text-align: center;font-size: 10pt;color: #505050;position: absolute;
+          bottom: 0px;
+          width: 100%;">
+            Copyright @2020 Cohere-Med Inc.All rights reserved
+          </p>
+        </div>
+         
+        <div *ngIf="!spin">
+          <div class="loading-spinner"></div>
+          <div style="text-align: center;font-size: 32pt;padding-top: 50%;">
+            COVID-19
+          </div>
+          <div style="font-size: 24pt;text-align: center;color: #505050;">Tracer</div>
+        </div>
+        
+
+        
+        
+        
+        </body>
+        
+        
+        
+        
+        

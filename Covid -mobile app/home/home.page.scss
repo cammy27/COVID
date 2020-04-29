@@ -1,0 +1,67 @@
+
+
+
+body {
+  // height: 100%;
+  background-image: url(src/assets/Virustop.png),url(src/assets/Virusbottom.png);
+  background-repeat: no-repeat,no-repeat;
+  background-position: left top, right bottom;
+  background-color: #E5E7EB;
+}
+
+input:hover{
+  outline: none;
+}
+
+input[type="button"]:hover{
+  outline: none;
+}
+
+
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.loading-spinner {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border: 1px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 1px solid #3498db;
+  width: 75px;
+  height: 75px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+.submit{
+  color: white;
+  background: #1874DE;
+  width: 148pt;
+  height: 32pt;
+  font-size: 12pt;
+  border-radius: 17pt;
+  cursor: pointer;
+  border:0
+}
+.disabled_submit{
+  color: white;
+  background: #1874DE;
+  width: 148pt;
+  height: 32pt;
+  font-size: 12pt;
+  border-radius: 17pt;
+  cursor: pointer;
+  border:0;
+  opacity: 0.5;
+}
